@@ -1,0 +1,37 @@
+<resources>>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+
+        <!--//触控颜色效果-->
+        <item name="android:colorControlHighlight">#0000AA</item>
+        <!--<item name="android:colorAccent">#00FF00</item> 无效-->
+        <item name="android:colorControlActivated">#00FFee</item>
+        <!--<item name="android:colorPrimary">#FFee22</item> 无效-->
+    </style>
+
+
+    <!--//style设置activity过渡动画-->
+    <style name="myTheme" parent="android:Theme.Material">
+        <!-- 允许使用transitions -->
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+
+        <!-- 指定进入和退出transitions -->
+        <item name="android:windowEnterTransition">@android:transition/explode</item>
+        <item name="android:windowExitTransition">@android:transition/explode</item>
+
+        <!-- 指定shared element transitions -->
+        <item name="android:windowSharedElementEnterTransition">
+            @android:transition/move
+        </item>
+        <item name="android:windowSharedElementExitTransition">
+            @android:transition/slide_top
+        </item>
+    </style>
+</resources>
